@@ -7,6 +7,7 @@ public class GameController : MonoBehaviour
 {
     public void ResetGame() 
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("SampleScene");
     }
 }

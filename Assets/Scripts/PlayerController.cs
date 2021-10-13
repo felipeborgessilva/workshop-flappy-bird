@@ -46,6 +46,11 @@ public class PlayerController : MonoBehaviour
             enabled = false;
             // ativa a tela de game over
             gameOver.gameObject.SetActive(true);
+            Invoke("Pause", 2);
         }
+    }
+    void Pause()
+    {
+        Time.timeScale = 0;
     }
 }
